@@ -1,0 +1,57 @@
+.btn-share{
+	margin-bottom:20px;
+}
+
+.brand-left {
+	margin-left: 30px;
+}
+
+.brand-right {
+	margin-right: 30px;
+}
+
+.text-center {
+	margin: auto;
+}
+
+.profile-row-bg {
+	margin-top: 10px;
+	max-width: 2560px;
+	height: 280px;
+}
+
+.profile-card {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.profile-row-img {
+	margin-top: 10px;
+
+}
+
+.profile-img {
+	margin-top: 5px;
+
+}
+
+.rounded {
+	width: 200px;
+	height: 200px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+.text-center
+{
+
+ width:200px;
+ height:200px;
+ background-color: #fff;
+ /* opacity: 0; */
+}
+
+#drop-area img
+{
+ max-width:200px;
+}
