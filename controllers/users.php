@@ -1,13 +1,9 @@
 <?php
 class Users extends Controller {
-  protected function register() {
-    $viewModel = new UserModel();
-    $this->returnView($viewModel->register(), true);
-  }
 
-  protected function login() {
+  protected function registration() {
     $viewModel = new UserModel();
-    $this->returnView($viewModel->login(), true);
+    $this->returnView($viewModel->registration(), true);
   }
 
   protected function logout() {
@@ -27,6 +23,14 @@ class Users extends Controller {
   protected function profileSettings() {
     $viewModel = new UserModel();
     $this->returnView($viewModel->profileSettings(), true);
+  }
+
+  protected function profilePersonalData() {
+    header('Location: '.ROOT_URL.'users/profileSettings');
+  }
+
+  protected function profileImage() {
+    header('Location: '.ROOT_URL.'users/profileSettings');
   }
 
 }

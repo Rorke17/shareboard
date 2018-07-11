@@ -15,8 +15,8 @@
         		<label>Password</label>
         		<input type="password" name="password" class="form-control" />
         	</div>
-        	<input class="btn btn-primary" name="submit" type="submit" value="Submit" /><br/><br/>
-          <span>New to Shareboard? </span><a href="<?php echo ROOT_URL; ?>users/register">SIGN UP</a>
+        	<input class="btn btn-primary" name="signin" type="submit" value="Submit" /><br/><br/>
+          <span>New to Shareboard? </span><a href="<?php echo ROOT_URL; ?>users/registration">SIGN UP</a>
         </form>
       </div>
     </div>
@@ -28,7 +28,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Create new account</h5>
-        <form method="post" action="<?php echo ROOT_URL; ?>users/register">
+        <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
         <div class="form-row">
           <div class="col">
             <input type="text" name="first_name" class="form-control" placeholder="First name">
@@ -48,7 +48,7 @@
             <input type="password" name="password_repeat" class="form-control" placeholder=" Repeat Password">
           </div>
         </div><br/>
-        <input class="btn btn-primary" name="submit" type="submit" value="Submit" />
+        <input class="btn btn-primary" name="register" type="submit" value="Submit" />
       </form>
       </div>
     </div>

@@ -17,7 +17,7 @@ class Messages {
     }
 
     if(isset($_SESSION['successMsg'])) {
-      echo '<div class="alert alert-danger">'.$_SESSION['successMsg'].'</div>';
+      echo '<div class="alert alert-success">'.$_SESSION['successMsg'].'</div>';
       unset($_SESSION['successMsg']);
     }
 

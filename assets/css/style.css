@@ -1,3 +1,7 @@
+.card .text-center .welcome {
+	width: 1800px;
+}
+
 .btn-share{
 	margin-bottom:20px;
 }
@@ -42,16 +46,13 @@
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
 
-.text-center
-{
-
+.text-center .bck-text {
  width:200px;
  height:200px;
  background-color: #fff;
  /* opacity: 0; */
 }
 
-#drop-area img
-{
+#drop-area img {
  max-width:200px;
 }

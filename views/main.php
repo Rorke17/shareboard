@@ -28,6 +28,7 @@
 						<?php endif; ?>
 					 </ul>
 					 <ul class="navbar-nav brand-right">
+						 <?php if(isset($_SESSION['is_logged_in'])) : ?>
 							  <li class="nav-item dropdown">
 									 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										 Profile
@@ -37,6 +38,7 @@
 											 <a class="dropdown-item" href="#">Another action</a>
 									 </div>
 							 </li>
+						 <?php endif; ?>
 							<?php if(isset($_SESSION['is_logged_in'])) : ?>
 							 <li class="nav-item">
 									 <a class="nav-link" href="<?php echo ROOT_URL; ?>users/profile">Welcome <?php echo $_SESSION['user_data']['first_name']; ?></a>
@@ -46,10 +48,10 @@
 							 </li>
 							<?php else : ?>
 								<li class="nav-item">
-										<a class="nav-link" href="<?php echo ROOT_URL; ?>users/login">Login</a>
+										<a class="nav-link" href="<?php echo ROOT_URL; ?>users/registration">Login</a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="<?php echo ROOT_URL; ?>users/login">Register</a>
+										<a class="nav-link" href="<?php echo ROOT_URL; ?>users/registration">Register</a>
 								</li>
 							<?php endif; ?>
 					 </ul>

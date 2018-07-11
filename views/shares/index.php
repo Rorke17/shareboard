@@ -2,7 +2,7 @@
 	<?php if (isset($_SESSION['is_logged_in'])): ?>
 	<a class="btn btn-success btn-share" href="<?php echo ROOT_PATH; ?>shares/add">Share Something</a>
 <?php else: ?>
-	<a class="btn btn-success btn-share" href="<?php echo ROOT_PATH; ?>users/login">Share Something</a>
+	<a class="btn btn-success btn-share" href="<?php echo ROOT_PATH; ?>users/registration">Share Something</a>
 <?php endif; ?>
 	<?php foreach($viewModel as $item) : ?>
 		<div class="card">
