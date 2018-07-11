@@ -64,6 +64,6 @@
      	<?php require($view); ?>
      <!-- </div> -->
 
-    </div><!-- /.container -->
+    </div>
 </body>
 </html>

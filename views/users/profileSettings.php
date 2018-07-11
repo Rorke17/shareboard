@@ -30,7 +30,6 @@
     </div>
     <!-- end profile form -->
   </div>
-
   <div class="col col-md-6">
     <div class="row">
       <div class="col">

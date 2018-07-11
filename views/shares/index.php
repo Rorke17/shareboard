@@ -15,13 +15,11 @@
 			<br />
 			<a class="btn btn-primary" href="<?php echo $item['link']; ?>" target="_blank">Go To Website</a>
 		</div>
-		<!-- edit this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 		<div class="card-footer">
 		<?php if(isset($_SESSION['is_logged_in']) && ($_SESSION['user_data']['id'] == 1 || $item['user_id'] == $_SESSION['user_data']['id'])) : ?>
 				<form method="post" action="<?php echo ROOT_PATH; ?>shares/edit"><br />
 					<input type="hidden" name='shared_id' value="<?php echo $item['id']; ?>" />
 					<input class="btn btn-primary" name="edit" type="submit" value="Edit" />
-<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
 					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
 					  Delete this post
 					</button>

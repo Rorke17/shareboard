@@ -21,6 +21,7 @@
       </div>
     </div>
   </div>
+  
   <div class="col col-md-6">
     <div class="card">
       <div class="card-header">

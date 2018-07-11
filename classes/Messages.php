@@ -26,6 +26,5 @@ class Messages {
       unset($_SESSION['infoMsg']);
     }
   }
-
 }
 ?>

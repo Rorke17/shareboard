@@ -52,7 +52,5 @@ abstract class Model {
   public function rowCount() {
     return $this->stmt->rowCount();
   }
-
 }
-
 ?>
