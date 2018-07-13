@@ -2,8 +2,10 @@
 class ShareModel extends Model {
   public function Index() {
     $this->query('SELECT * FROM shares ORDER BY create_date DESC');
-    $rows = $this->resultSet();
-    return $rows;
+    $rowsShares = $this->resultSet();
+    // $this->query('SELECT first_name, last_name FROM users ');
+    // $rowsUsers = $this->resultSet();
+    return $rowsShares;
 
   }
 

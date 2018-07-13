@@ -7,10 +7,11 @@
 	<?php foreach($viewModel as $item) : ?>
 		<div class="card">
 			<div class="card-header">
-				<h3><?php echo $item['title']; ?></h3>
+				<a class="nav-link disabled" href="#"><?php echo $item['first_name']; ?></a>
 				<small><?php echo $item['create_date']; ?></small>
 			</div>
 			<div class="card-body">
+				<h3><?php echo $item['title']; ?></h3>
 			<p><?php echo $item['body']; ?></p>
 			<br />
 			<a class="btn btn-primary" href="<?php echo $item['link']; ?>" target="_blank">Go To Website</a>
