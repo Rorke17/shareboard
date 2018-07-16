@@ -7,7 +7,7 @@
 	<?php foreach($viewModel as $item) : ?>
 		<div class="card">
 			<div class="card-header">
-				<a class="nav-link disabled" href="#"><?php echo $item['first_name']; ?></a>
+				<a class="nav-link disabled" href="#"><?php echo $viewModel ->index($item['user_id']); ?></a>
 				<small><?php echo $item['create_date']; ?></small>
 			</div>
 			<div class="card-body">

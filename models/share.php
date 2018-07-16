@@ -1,12 +1,21 @@
 <?php
 class ShareModel extends Model {
-  public function Index() {
-    $this->query('SELECT * FROM shares ORDER BY create_date DESC');
-    $rowsShares = $this->resultSet();
-    // $this->query('SELECT first_name, last_name FROM users ');
-    // $rowsUsers = $this->resultSet();
-    return $rowsShares;
+  // public function Index() {
+  //   $this->query('SELECT * FROM shares ORDER BY create_date DESC');
+  //   $rowsShares = $this->resultSet();
+  //   return $rowsShares;
+  // }
 
+  public function index($id = NULL) {
+    if (is_null($id)) {
+      $this->query('SELECT * FROM shares ORDER BY create_date DESC');
+      $rowsShares = $this->resultSet();
+      return $rowsShares;
+    } else {
+      $this->query('SELECT first_name, last_name FROM users WHERE id='.$id);
+      $rowsUsers = $this->resultSet();
+      return $rowsUsers;
+    }
   }
 
   public function add() {
